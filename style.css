@@ -177,7 +177,7 @@ margin-left: 6%;
 
 #spelcontainer {
   display: flex;
-  background-image: url(images/spelgr.JPG);
+  background-image: url(images/spelgr.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   justify-content: space-between;
@@ -256,30 +256,30 @@ margin-left: 6%;
   }
 
   #bars {
-    width: 18px;
-    height: 2px;
+    width: 30px;
+    height: 5px;
     display: none;
     position: relative;
-    background: #222831;
+    background: #555555;
     text-align: justify;
     top: 30%;
   }
 
   #bars::before, #bars::after {
-    width: 18px;
-    height: 2px;
+    width: 30px;
+    height: 5px;
     display: inline-block;
     position: absolute;
-    background: #222831;
+    background: #555555;
     content: "";
   }
 
   #bars::before {
-    top: 5px;
+    top: 10px;
   }
 
   #bars::after {
-    top: -5px;
+    top: -10px;
   }
 
   #welkom {
@@ -320,6 +320,7 @@ margin-left: 6%;
   .item {
     order: 2;
     display: none;
+    padding: 1rem 0;
   }
 
   .item.active {
@@ -352,10 +353,11 @@ margin-left: 6%;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 3rem;
+    padding: 1.5rem;
     background-color: #a1cae2;
   }
   #but {
     margin: 0 2rem;
+    font-size: 2rem;
   }
 }
