@@ -181,6 +181,8 @@ margin-left: 6%;
   background-repeat: no-repeat;
   background-size: cover;
   justify-content: space-between;
+  flex-direction: row-reverse;
+  margin-top: 2%;
 }
 
 .footer {
