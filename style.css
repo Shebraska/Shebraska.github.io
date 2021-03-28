@@ -177,7 +177,7 @@ margin-left: 6%;
 
 #spelcontainer {
   display: flex;
-  background-image: url(.images/spelgr.JPG);
+  background-image: url(.images/spelgr.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   justify-content: space-between;
