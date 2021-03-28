@@ -352,7 +352,10 @@ margin-left: 6%;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 4rem;
+    padding: 3rem;
     background-color: #a1cae2;
+  }
+  #but {
+    margin: 0 2rem;
   }
 }
