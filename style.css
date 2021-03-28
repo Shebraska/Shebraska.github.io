@@ -348,4 +348,11 @@ margin-left: 6%;
     margin: 2%;
     text-align: left;
   }
+  .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4%;
+    background-color: #a1cae2;
+  }
 }
