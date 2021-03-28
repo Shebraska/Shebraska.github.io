@@ -1,0 +1,351 @@
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f4eeff;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+a:link {
+  color: #555555;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #555555;
+}
+
+a:hover {
+  color: #000;
+}
+
+li {
+  list-style: none;
+}
+
+#boven{
+  display: none;
+}
+
+#bovengroot {
+  background-image: url(images/zz.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 6%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#witgroot {
+width: 35%;
+padding-top: 6%;
+margin-left: 6%;
+}
+
+#logogroot {
+  width: 25%;
+}
+
+.fotospel {
+  border-radius: 10px;
+  margin: 2%;
+}
+
+.spelactiviteiten {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 2%;
+  align-items: center;
+  background-color: #f4eeff;
+  border-radius: 10px;
+  padding: 1%;
+}
+
+.speltekst {
+  margin: 2%;
+}
+
+.evenementen {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  background-color: #f4eeff;
+  border-radius: 10px;
+  margin: 1rem 2rem;
+  flex: 1;
+}
+
+.vreugdevuur {
+  flex: 1;
+  margin: 1rem 2rem;
+}
+
+.fotoev {
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  border-style: solid;
+  border-color: #a1cae2;
+}
+
+.fotovv {
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  border-style: solid;
+  border-color: #a1cae2;
+}
+
+.geboordeputten {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 2%;
+  align-items: center;
+  background-color: #f4eeff;
+  border-radius: 10px;
+  padding: 1%;
+}
+
+.fotogb {
+  border-radius: 10px;
+  margin: 2% 2% 0;
+}
+
+.gbtekst {
+  margin: 0 2% 2%;
+}
+
+.wateroverlast {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  background-color: #f4eeff;
+  border-radius: 10px;
+  flex: 1;
+  margin: 1rem 2rem;
+}
+
+.fotowo {
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  border-style: solid;
+  border-color: #a1cae2;
+}
+
+.tekstmidden {
+  text-align: center;
+}
+
+#cntct {
+  display: flex;
+  justify-content: space-around;
+  text-align: left;
+  padding: 2% 0;
+}
+
+.contacttekst {
+  padding: 0 2%;
+}
+
+.prijzentekst {
+  padding: 0 2%;
+}
+
+#welkom {
+  display: flex;
+  text-align: left;
+  margin: 5% 2%;
+  align-items: center;
+}
+
+.tekstwelkom {
+  margin: 2%;
+}
+
+
+
+#spelcontainer {
+  display: flex;
+  background-image: url(images/spelgr.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: space-between;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1%;
+  background-color: #a1cae2;
+}
+
+#but {
+  margin: 0 2%;
+  color: #fff;
+}
+
+#but:hover {
+  color: #000;
+}
+
+#evenementenenwateroverlastcontainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  margin: 2%;
+}
+
+#geboordeputtencontainer {
+  display: flex;
+  background-image: url(images/gpgr.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  margin-top: 2%;
+}
+
+@media (max-width: 1050px) {
+
+#bovengroot {
+  display: none;
+}
+  /* navbar */
+  #menu {
+
+    display: flex;
+    padding: 0.5rem;
+    margin: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 99;
+    transition: 0.2s;
+  }
+
+  #menu li a {
+    display: block;
+  }
+
+  /* #logo {
+    margin-right: auto;
+    margin-left: 1rem;
+    width: 25%;
+  } */
+
+  /* .item {
+    margin-right: 2rem;
+  } */
+
+  #toggle {
+    cursor: pointer;
+    display: none;
+    padding-right: 1.5rem;
+
+  }
+
+  #bars {
+    width: 18px;
+    height: 2px;
+    display: none;
+    position: relative;
+    background: #222831;
+    text-align: justify;
+    top: 30%;
+  }
+
+  #bars::before, #bars::after {
+    width: 18px;
+    height: 2px;
+    display: inline-block;
+    position: absolute;
+    background: #222831;
+    content: "";
+  }
+
+  #bars::before {
+    top: 5px;
+  }
+
+  #bars::after {
+    top: -5px;
+  }
+
+  #welkom {
+    margin-top: 50rem;
+  }
+
+  #evenementenenwateroverlastcontainer, #welkom, #geboordeputtencontainer, #spelcontainer, #cntct {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 2%;
+  }
+
+  #menu {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  #menu li {
+    margin: 0;
+  }
+
+  #menu li:last-child {
+    margin: 0;
+  }
+
+  .item:first-child {
+    margin: auto;
+  }
+
+  #toggle {
+    display: inline-block;
+    padding-right: 3rem;
+  }
+
+  .item {
+    order: 2;
+    display: none;
+  }
+
+  .item.active {
+    display: block;
+  }
+
+  .footer {
+    padding: 1rem;
+  }
+  #boven {
+    background-image: url(images/zz.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 25%;
+    display: flex;
+  }
+
+  #wit {
+    width: 70%;
+    display: none;
+  }
+#logo {
+  padding: 0;
+}
+  .tekstboven {
+    margin: 2%;
+    text-align: left;
+  }
+}
