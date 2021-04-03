@@ -28,6 +28,10 @@ li {
   list-style: none;
 }
 
+p {
+  font-size: 1rem;
+}
+
 #boven{
   display: none;
 }
@@ -177,7 +181,7 @@ margin-left: 6%;
 
 #spelcontainer {
   display: flex;
-  background-image: url(images/spelgr.jpg);
+  background-image: url(images/spelgr.JPG);
   background-repeat: no-repeat;
   background-size: cover;
   justify-content: space-between;
