@@ -72,7 +72,7 @@ margin-left: 6%;
   margin: 2%;
 }
 
-.evenementen {
+#evenementen {
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -83,7 +83,7 @@ margin-left: 6%;
   flex: 1;
 }
 
-.vreugdevuur {
+#vreugdevuur {
   flex: 1;
   margin: 1rem 2rem;
 }
@@ -124,7 +124,7 @@ margin-left: 6%;
   margin: 0 2% 2%;
 }
 
-.wateroverlast {
+#wateroverlast {
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -192,8 +192,9 @@ margin-left: 6%;
 }
 
 #but {
-  margin: 0 2%;
+  margin: 0 4%;
   color: #fff;
+  font-size: 2rem;
 }
 
 #but:hover {
@@ -220,11 +221,19 @@ margin-left: 6%;
 @media (max-width: 1050px) {
 
 #bovengroot {
+  display: flex;
+  background-image: url(images/zz.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 25%;
+
+}
+
+#witgroot {
   display: none;
 }
   /* navbar */
   #menu {
-
     display: flex;
     padding: 0.5rem;
     margin: 0;
@@ -232,6 +241,7 @@ margin-left: 6%;
     position: fixed;
     z-index: 99;
     transition: 0.2s;
+    background-color: #a1cae2;
   }
 
   #menu li a {
@@ -258,7 +268,7 @@ margin-left: 6%;
   #bars {
     width: 30px;
     height: 5px;
-    display: none;
+    display: inline-block;
     position: relative;
     background: #555555;
     text-align: justify;
@@ -331,16 +341,14 @@ margin-left: 6%;
     padding: 1rem;
   }
   #boven {
-    background-image: url(images/zz.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-bottom: 25%;
-    display: flex;
+    background-color: #a1cae2;
+    display: none;
+    transition-duration: 2s;
   }
 
   #wit {
     width: 70%;
-    display: none;
+    display: inline-block;
   }
 #logo {
   padding: 0;
