@@ -330,7 +330,8 @@ margin-left: 6%;
   .item {
     order: 2;
     display: none;
-    padding: 1rem 0;
+    padding: 0.3rem 0;
+    font-size: 2rem;
   }
 
   .item.active {
