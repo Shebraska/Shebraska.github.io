@@ -35,6 +35,10 @@ a:hover {
   color: #555555;
 }
 
+hr {
+  border-color: #555555;
+}
+
 /* navbar */
 .menu {
   list-style: none;
@@ -120,6 +124,20 @@ a:hover {
   flex-basis: auto;
 }
 
+#index {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+}
+
+.introtekst {
+  padding: 3rem;
+  text-align: left;
+}
+
 #home {
   display: flex;
   justify-content: center;
@@ -151,7 +169,7 @@ a:hover {
 }
 
 /* zeugen en beren */
-.kinza, .lady, .sneeuw, .zaza, .lieke, .aimee {
+.kinza, .lady, .sneeuw, .zaza, .lieke, .aimee, .nala, .senseo, .wodan, .kosmos {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -159,7 +177,7 @@ a:hover {
   padding: 0 3rem;
   margin: 2rem 0;
 }
-.senseo, .wodan {
+ /* {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -167,12 +185,12 @@ a:hover {
   padding: 0 3rem;
   margin: 2rem 0;
   flex-basis: auto;
-}
-.kinzafoto, .kinzafoto2, .ladyfoto, .ladyfoto2, .aimeefoto, .aimeefoto2, .sneeuwfoto, .sneeuwfoto2, .liekefoto, .liekefoto2, .senseofoto, .senseofoto2, .wodanfoto, .wodanfoto2, .zazafoto, .zazafoto2 {
+} */
+.kinzafoto, .kinzafoto2, .ladyfoto, .ladyfoto2, .aimeefoto, .aimeefoto2, .sneeuwfoto, .sneeuwfoto2, .liekefoto, .liekefoto2, .senseofoto, .senseofoto2, .wodanfoto, .wodanfoto2, .zazafoto, .zazafoto2, .nalafoto, .nalafoto2, .kosmosfoto, .kosmosfoto2 {
   margin: 0 1rem;
   flex: 1;
 }
-.kinzainfo, .ladyinfo, .aimeeinfo, .sneeuwinfo, .liekeinfo, .zazainfo, .senseoinfo , .wodaninfo {
+.kinzainfo, .ladyinfo, .aimeeinfo, .sneeuwinfo, .liekeinfo, .zazainfo, .senseoinfo , .wodaninfo, .nalainfo, .kosmosinfo {
   flex: 1;
 }
 .foto {
@@ -214,6 +232,17 @@ a:hover {
     margin: 2rem 1rem;
   }
 
+  #index {
+    flex-direction: column;
+  }
+
+  .introtekst {
+    text-align: center;
+  }
+  .introtekst li {
+    list-style: none;
+  }
+
   .koppel1 {
     flex-direction: column;
     margin-bottom: 5rem;
@@ -226,7 +255,7 @@ a:hover {
     text-align: center;
   }
 
-  .senseo, .wodan, .lieke, .aimee, .kinza, .lady, .sneeuw, .zaza {
+  .senseo, .wodan, .lieke, .aimee, .kinza, .lady, .sneeuw, .zaza, .nala, .kosmos {
     flex-direction: column;
   }
 
@@ -282,8 +311,12 @@ a:hover {
   #beren, #zeugen {
     margin: 10rem 1rem 1rem;
   }
-.introtekst {
-  margin: 0 2rem;
+#index {
+  padding-top: 10rem;
+}
+
+#buffcreme {
+  padding-top: 7rem;
 }
   .menu {
     flex-direction: column;
@@ -315,7 +348,7 @@ a:hover {
   .item.active {
     display: block;
   }
-  .senseo, .wodan, .lieke, .aimee, .kinza, .lady, .sneeuw, .zaza {
+  .senseo, .wodan, .lieke, .aimee, .kinza, .lady, .sneeuw, .zaza, .nala, .kosmos {
     margin: 3rem 0;
     padding: 0;
   }
@@ -330,12 +363,15 @@ a:hover {
   .wodanhoofdd {
     display: none;
   }
-    .senseo, .wodan, .lieke, .aimee, .kinza, .lady, .sneeuw, .zaza {
+    .senseo, .wodan, .lieke, .aimee, .kinza, .lady, .sneeuw, .zaza, .nala, .kosmos {
       background-color: #313131;
       border-radius: 10px;
     }
     .koppel1 {
       background-color: #313131;
       border-radius: 10px;
+    }
+    .index {
+      flex-direction: column;
     }
 }
