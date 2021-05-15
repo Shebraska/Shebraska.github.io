@@ -187,12 +187,12 @@ hr {
 
 .koppelfoto {
   max-width: 500px;
-  margin-bottom: 3rem;
   border-radius: 10px;
 }
 
 .k1 {
   flex: 1;
+  padding: 0 5rem;
 }
 
 .k1tekst {
@@ -257,6 +257,10 @@ hr {
   .cavia {
     margin: 3rem 0;
     padding: 0;
+  }
+
+  .k1 {
+    padding: 0.2rem;
   }
 
   body {
