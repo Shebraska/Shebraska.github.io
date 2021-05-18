@@ -123,6 +123,10 @@ hr {
   margin-top: 3rem;
 }
 
+.hoofd {
+  padding: 1rem 0 0 1rem;
+}
+
 /* fokdoel */
 .tussen {
   padding: 0 10rem;
@@ -198,6 +202,50 @@ hr {
 .k1tekst {
   flex: 1;
   padding: 0 0.5rem;
+}
+
+/* geboren */
+.geboren {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-basis: auto;
+}
+
+.geborenfoto {
+  flex: 1;
+  padding: 3rem;
+}
+
+.geborentekst {
+  flex: 2;
+}
+
+.fotogeboren {
+  border-radius: 10px;
+  max-width: 500px;
+}
+
+.jongen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-basis: auto;
+}
+
+.nestfoto {
+  flex: 1;
+  padding: 1rem 2rem;
+}
+
+.nesttekst {
+  flex: 1;
+}
+
+.fotonest {
+  border-radius: 10px;
 }
 
 @media (max-width: 1350px) {
