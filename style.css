@@ -271,6 +271,14 @@ hr {
     padding-top: 7rem;
   }
 
+  .geboren {
+    padding-bottom: 2rem;
+  }
+
+  .jongen {
+    padding-bottom: 2rem;
+  }
+
   .menu {
     flex-direction: column;
   }
