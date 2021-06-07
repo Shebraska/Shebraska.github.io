@@ -1,0 +1,419 @@
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  /* background-color: #f4eeff; */
+  background-color: #414141;
+  text-align: center;
+  color: #FFF;
+}
+
+footer {
+  margin: 1rem 0 0;
+  padding: 0.5rem;
+  /* background-color: #f9d89c; */
+  background-color: #313131;
+  box-shadow: 0 0 5px;
+  font-weight: 600;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+a:link {
+  color: #FFF;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #FFF;
+}
+
+a:hover {
+  color: #555555;
+}
+
+hr {
+  border-color: #555555;
+}
+
+/* navbar */
+.menu {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #313131;
+  padding: 1rem;
+  box-shadow: 0 0 5px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.menu li a {
+  display: block;
+}
+
+.item {
+  margin-right: 2rem;
+}
+
+.logo {
+  margin-right: auto;
+  margin-left: 1rem;
+}
+
+#toggle {
+  cursor: pointer;
+  margin-right: 1rem;
+  display: none;
+}
+
+.bars {
+  width: 18px;
+  height: 2px;
+  display: inline-block;
+  position: relative;
+  background: #FFF;
+  text-align: justify;
+  margin: 5px;
+}
+
+.bars::before, .bars::after {
+  width: 18px;
+  height: 2px;
+  display: inline-block;
+  position: absolute;
+  background: #FFF;
+  content: "";
+}
+
+.bars::before {
+  top: 5px;
+}
+
+.bars::after {
+  top: -5px;
+}
+
+/* index */
+#index {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+}
+
+.introtekst {
+  padding: 3rem;
+  text-align: left;
+}
+
+#home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 3rem;
+}
+
+.hoofd {
+  padding: 1rem 0 0 1rem;
+}
+
+/* fokdoel */
+.tussen {
+  padding: 0 10rem;
+}
+
+.leader {
+  border-radius: 20px;
+  max-width: 800px;
+}
+
+#fokdoelcontainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin: 3rem;
+}
+
+.fokdoeltekst {
+  margin: 5rem 0 4rem;
+  text-align: left;
+}
+
+.fokdoelfotos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 5rem;
+}
+
+/* Cavia's */
+.cavia {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding: 0 3rem;
+  margin: 2rem 0;
+}
+
+.caviafoto, .caviafoto2 {
+  margin: 0 1rem;
+  flex: 1;
+}
+
+.caviainfo {
+  flex: 1;
+}
+
+.foto {
+  border-radius: 10px;
+  margin: 1rem 0;
+}
+
+/* Koppels */
+.koppel1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-basis: auto;
+}
+
+.koppelfoto {
+  max-width: 500px;
+  border-radius: 10px;
+}
+
+.k1 {
+  flex: 1;
+  padding: 0 5rem;
+}
+
+.k1tekst {
+  flex: 1;
+  padding: 0 0.5rem;
+}
+
+/* geboren */
+.geboren {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-basis: auto;
+}
+
+.geborenfoto {
+  flex: 1;
+  padding: 3rem;
+}
+
+.geborentekst {
+  flex: 2;
+}
+
+.fotogeboren {
+  border-radius: 10px;
+  max-width: 500px;
+}
+
+.jongen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-basis: auto;
+}
+
+.nestfoto {
+  flex: 1;
+  padding: 1rem 2rem;
+}
+
+.nesttekst {
+  flex: 1;
+}
+
+.fotonest {
+  border-radius: 10px;
+}
+
+@media (max-width: 1350px) {
+  nav {
+    position: absolute;
+    width: 100%;
+    top: 0px;
+  }
+
+  .tussen {
+    display: none;
+  }
+
+  #home {
+    margin: 10rem 0.2rem 0.2rem;
+  }
+
+  #index {
+    padding-top: 10rem;
+  }
+
+  #buffcreme {
+    padding-top: 7rem;
+  }
+
+  .geboren {
+    padding-bottom: 2rem;
+  }
+
+  .jongen {
+    padding-bottom: 2rem;
+  }
+
+  .menu {
+    flex-direction: column;
+  }
+
+  .menu li {
+    margin: 12px 0;
+  }
+
+  .menu li:last-child {
+    margin: 0;
+  }
+
+  .item:first-child {
+    margin: auto;
+  }
+
+  #toggle {
+    order: 1;
+    padding-bottom: 1rem;
+    display: inline-block;
+  }
+
+  .item {
+    order: 2;
+    display: none;
+  }
+
+  .item.active {
+    display: block;
+  }
+
+  .cavia {
+    margin: 3rem 0;
+    padding: 0;
+  }
+
+  .k1 {
+    padding: 0.2rem;
+  }
+
+  body {
+    margin: 0 0.5rem;
+  }
+}
+
+@media (max-width: 1100px) {
+  #home {
+    margin-top: 1rem;
+  }
+
+  #fokdoelcontainer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 1rem;
+  }
+
+  #index {
+    flex-direction: column;
+  }
+
+  .introtekst {
+    text-align: center;
+  }
+
+  .introtekst li {
+    list-style: none;
+  }
+
+  .koppel1 {
+    flex-direction: column;
+    margin-bottom: 5rem;
+  }
+
+  .koppelfoto {
+    margin: 0.5rem 0;
+  }
+
+  .fokdoeltekst {
+    text-align: center;
+  }
+
+  .cavia {
+    flex-direction: column;
+  }
+
+  .menu {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .menu li {
+    margin: 12px 0;
+  }
+
+  .menu li:last-child {
+    margin: 0;
+  }
+
+  #toggle {
+    order: 1;
+    padding-bottom: 1rem;
+    display: block;
+  }
+
+  .item {
+    order: 2;
+    display: none;
+  }
+
+  .item.active {
+    display: block;
+  }
+
+  body {
+    margin: 0 0.5rem;
+  }
+
+  img {
+    width: 99%;
+  }
+}
+
+@media (max-width: 710px) {
+  .cavia {
+    background-color: #313131;
+    border-radius: 10px;
+  }
+
+  .koppel1 {
+    background-color: #313131;
+    border-radius: 10px;
+  }
+
+  #index {
+    flex-direction: column;
+  }
+}
