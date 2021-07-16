@@ -1,419 +1,314 @@
 body {
   margin: 0;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 500;
-  font-size: 1rem;
-  /* background-color: #f4eeff; */
-  background-color: #414141;
+  padding: 0;
   text-align: center;
-  color: #FFF;
-}
-
-footer {
-  margin: 1rem 0 0;
-  padding: 0.5rem;
-  /* background-color: #f9d89c; */
-  background-color: #313131;
-  box-shadow: 0 0 5px;
-  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f4eeff;
 }
 
 img {
-  width: 100%;
-  height: auto;
-  display: block;
+  max-width: 100%;
+  border-radius: 10px;
 }
 
 a:link {
-  color: #FFF;
+  color: #555555;
   text-decoration: none;
 }
 
 a:visited {
-  color: #FFF;
-}
-
-a:hover {
   color: #555555;
 }
 
-hr {
-  border-color: #555555;
+a:hover {
+  color: #000;
 }
 
-/* navbar */
-.menu {
+li {
   list-style: none;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  background-color: #313131;
-  padding: 1rem;
-  box-shadow: 0 0 5px;
-  font-weight: 700;
-  margin: 0;
 }
 
-.menu li a {
-  display: block;
+p {
+  font-size: 17px;
 }
 
-.item {
-  margin-right: 2rem;
-}
-
-.logo {
-  margin-right: auto;
-  margin-left: 1rem;
-}
-
-#toggle {
-  cursor: pointer;
-  margin-right: 1rem;
+#boven {
   display: none;
 }
 
-.bars {
-  width: 18px;
-  height: 2px;
-  display: inline-block;
-  position: relative;
-  background: #FFF;
-  text-align: justify;
-  margin: 5px;
-}
-
-.bars::before, .bars::after {
-  width: 18px;
-  height: 2px;
-  display: inline-block;
-  position: absolute;
-  background: #FFF;
-  content: "";
-}
-
-.bars::before {
-  top: 5px;
-}
-
-.bars::after {
-  top: -5px;
-}
-
-/* index */
-#index {
+#bovengroot {
+  background-image: url(images/zz.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 6%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  flex-direction: row;
-  margin: 0;
-  padding: 0;
 }
 
-.introtekst {
-  padding: 3rem;
-  text-align: left;
+#witgroot {
+  width: 35%;
+  padding-top: 6%;
+  margin-left: 6%;
 }
 
-#home {
+#logogroot {
+  width: 25%;
+}
+
+.fotospel {
+  border-radius: 10px;
+  margin: 2%;
+}
+
+.spelactiviteiten {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
-  margin-top: 3rem;
-}
-
-.hoofd {
-  padding: 1rem 0 0 1rem;
-}
-
-/* fokdoel */
-.tussen {
-  padding: 0 10rem;
-}
-
-.leader {
-  border-radius: 20px;
-  max-width: 800px;
-}
-
-#fokdoelcontainer {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  margin: 3rem;
-}
-
-.fokdoeltekst {
-  margin: 5rem 0 4rem;
-  text-align: left;
-}
-
-.fokdoelfotos {
-  display: flex;
-  justify-content: center;
+  text-align: center;
+  margin: 2%;
   align-items: center;
-  padding: 0 5rem;
-}
-
-/* Cavia's */
-.cavia {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  padding: 0 3rem;
-  margin: 2rem 0;
-}
-
-.caviafoto, .caviafoto2 {
-  margin: 0 1rem;
-  flex: 1;
-}
-
-.caviainfo {
-  flex: 1;
-}
-
-.foto {
+  background-color: #f4eeff;
   border-radius: 10px;
-  margin: 1rem 0;
+  padding: 1%;
 }
 
-/* Koppels */
-.koppel1 {
+.speltekst {
+  margin: 2%;
+}
+
+#evenementen {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  flex-basis: auto;
-}
-
-.koppelfoto {
-  max-width: 500px;
-  border-radius: 10px;
-}
-
-.k1 {
-  flex: 1;
-  padding: 0 5rem;
-}
-
-.k1tekst {
-  flex: 1;
-  padding: 0 0.5rem;
-}
-
-/* geboren */
-.geboren {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
-  flex-basis: auto;
-}
-
-.geborenfoto {
-  flex: 1;
-  padding: 3rem;
-}
-
-.geborentekst {
-  flex: 2;
-}
-
-.fotogeboren {
+  text-align: center;
+  align-items: center;
+  background-color: #f4eeff;
   border-radius: 10px;
-  max-width: 500px;
+  margin: 1.5rem 2rem;
+  flex: 1;
 }
 
-.jongen {
+#vreugdevuur {
+  flex: 1;
+  margin: 1.5rem 2rem;
+}
+
+.fotoev {
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  border-style: solid;
+  border-color: #a1cae2;
+}
+
+.fotovv {
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  border-style: solid;
+  border-color: #a1cae2;
+}
+
+.geboordeputten {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 2%;
+  align-items: center;
+  background-color: #f4eeff;
+  border-radius: 10px;
+  padding: 1%;
+}
+
+.fotogb {
+  border-radius: 10px;
+  margin: 2% 2% 0;
+}
+
+.gbtekst {
+  margin: 0 2% 2%;
+}
+
+#wateroverlast {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  background-color: #f4eeff;
+  border-radius: 10px;
+  flex: 1;
+  margin: 1.5rem 2rem;
+}
+
+.fotowo {
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  border-style: solid;
+  border-color: #a1cae2;
+}
+
+.tekstmidden {
+  text-align: center;
+}
+
+#contact {
+  display: flex;
+  justify-content: space-around;
+  text-align: left;
+  padding: 2% 0;
+}
+
+.contacttekst {
+  padding: 0 2%;
+}
+
+.prijzentekst {
+  padding: 0 2%;
+}
+
+#welkom {
+  display: flex;
+  text-align: left;
+  margin: 5% 2%;
+  align-items: center;
+}
+
+.tekstwelkom {
+  margin: 2%;
+}
+
+#spelactiviteiten {
+  display: flex;
+  background-image: url(images/spelgr.JPG);
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: space-between;
+}
+
+.footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: row;
-  flex-basis: auto;
+  padding: 1%;
+  background-color: #a1cae2;
 }
 
-.nestfoto {
-  flex: 1;
-  padding: 1rem 2rem;
+#but {
+  margin: 0 4%;
+  color: #fff;
+  font-size: 2rem;
 }
 
-.nesttekst {
-  flex: 1;
+#but:hover {
+  color: #000;
 }
 
-.fotonest {
-  border-radius: 10px;
+#evenementenenwateroverlastcontainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  margin: 2%;
 }
 
-@media (max-width: 1350px) {
-  nav {
-    position: absolute;
-    width: 100%;
-    top: 0px;
-  }
-
-  .tussen {
-    display: none;
-  }
-
-  #home {
-    margin: 10rem 0.2rem 0.2rem;
-  }
-
-  #index {
-    padding-top: 10rem;
-  }
-
-  #buffcreme {
-    padding-top: 7rem;
-  }
-
-  .geboren {
-    padding-bottom: 2rem;
-  }
-
-  .jongen {
-    padding-bottom: 2rem;
-  }
-
-  .menu {
-    flex-direction: column;
-  }
-
-  .menu li {
-    margin: 12px 0;
-  }
-
-  .menu li:last-child {
-    margin: 0;
-  }
-
-  .item:first-child {
-    margin: auto;
-  }
-
-  #toggle {
-    order: 1;
-    padding-bottom: 1rem;
-    display: inline-block;
-  }
-
-  .item {
-    order: 2;
-    display: none;
-  }
-
-  .item.active {
-    display: block;
-  }
-
-  .cavia {
-    margin: 3rem 0;
-    padding: 0;
-  }
-
-  .k1 {
-    padding: 0.2rem;
-  }
-
-  body {
-    margin: 0 0.5rem;
-  }
+#geboordeputten {
+  display: flex;
+  background-image: url(images/gpgr.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  margin-top: 2%;
 }
 
-@media (max-width: 1100px) {
-  #home {
-    margin-top: 1rem;
+@media (max-width: 1050px) {
+
+  #bovengroot {
+    display: flex;
   }
 
-  #fokdoelcontainer {
-    flex-direction: column;
-    align-items: center;
+  #welkom {
+    display: flex;
     justify-content: center;
-    margin: 2rem 1rem;
-  }
-
-  #index {
-    flex-direction: column;
-  }
-
-  .introtekst {
+    align-items: center;
     text-align: center;
-  }
-
-  .introtekst li {
-    list-style: none;
-  }
-
-  .koppel1 {
     flex-direction: column;
-    margin-bottom: 5rem;
+    margin-top: 2%;
   }
 
-  .koppelfoto {
-    margin: 0.5rem 0;
-  }
-
-  .fokdoeltekst {
+  #evenementenenwateroverlastcontainer, #geboordeputten, #spelactiviteiten, #contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+    flex-direction: column;
+    margin: 2rem 0;
   }
 
-  .cavia {
-    flex-direction: column;
+  #vreugdevuur {
+    padding: 2rem 0;
   }
 
-  .menu {
-    flex-direction: column;
+  #wateroverlast, #geboordeputten, #spelactiviteiten {
     padding: 0;
-  }
-
-  .menu li {
-    margin: 12px 0;
-  }
-
-  .menu li:last-child {
     margin: 0;
+    background-color: #a1cae2;
+    background-image: none;
   }
 
-  #toggle {
-    order: 1;
-    padding-bottom: 1rem;
-    display: block;
+  #wateroverlast {
+    padding: 2rem 0;
+    border-radius: 0;
   }
 
-  .item {
-    order: 2;
+  .geboordeputten, .spelactiviteiten {
+    background-color: #a1cae2;
+  }
+
+  .fotospel, .fotogb {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    border-style: solid;
+    border-color: #a1cae2;
+  }
+
+  .wotekst {
+    margin: 0 3rem;
+  }
+
+  #contact, #welkom {
+    padding: 5rem 0;
+  }
+
+  #evenementen {
+    padding: 5rem 0;
+  }
+
+  .prijzentekst {
+    padding-top: 5rem;
+  }
+
+  #boven {
     display: none;
   }
 
-  .item.active {
-    display: block;
+  .tekstboven {
+    margin: 2%;
+    text-align: left;
   }
 
-  body {
-    margin: 0 0.5rem;
+  .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    background-color: #a1cae2;
   }
 
-  img {
-    width: 99%;
+  #but {
+    margin: 0 4%;
+    font-size: 3rem;
   }
 }
 
-@media (max-width: 710px) {
-  .cavia {
-    background-color: #313131;
-    border-radius: 10px;
-  }
-
-  .koppel1 {
-    background-color: #313131;
-    border-radius: 10px;
-  }
-
-  #index {
-    flex-direction: column;
-  }
-}
+@media (max-width: 800px) {}
